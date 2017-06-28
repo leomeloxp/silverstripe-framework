@@ -72,6 +72,11 @@ represents a new object and can be referenced in the PHP using `objFromFixture`
 
 The third and final level represents each individual object's fields.
 
+<div class="info" markdown="1">
+In order to make the fixtures available within your test class make sure to define the `fixture_file` property on that class with the appropriate fixture file, eg: `protected static $fixture_file = 'fixtures.yml';`
+</div>
+
+
 A field can either be provided with raw data (such as the names for our Players), or we can define a relationship, as
 seen by the fields prefixed with `=>`.
 
